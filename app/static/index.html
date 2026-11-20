@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiren Board — панель</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header>
+  <h1>Wiren Board</h1>
+  <span id="status" class="status">Подключение…</span>
+</header>
+<main>
+  <input id="filter" type="search" placeholder="Найти устройство или контрол" autocomplete="off">
+  <div id="devices" class="grid"></div>
+  <p id="empty" class="empty" hidden>Устройств пока нет. Проверьте подключение к контроллеру (MQTT_HOST).</p>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
